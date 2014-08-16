@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImage *mainImage=[UIImage imageNamed:@"sampleImage.jpg"];
+    ImageReflectionView *reflectionView=[[ImageReflectionView alloc]initWithFrame:CGRectMake(0, 0, 320,self.view.frame.size.height)];
+    [reflectionView setImageViewForImageDisplay:mainImage];
+    [self.view addSubview:reflectionView];
 }
 
 - (void)didReceiveMemoryWarning

@@ -21,6 +21,8 @@
 		62913401199EA31200BB037B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629133E3199EA31200BB037B /* UIKit.framework */; };
 		62913409199EA31200BB037B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62913407199EA31200BB037B /* InfoPlist.strings */; };
 		6291340B199EA31200BB037B /* ImageReflectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291340A199EA31200BB037B /* ImageReflectionViewTests.m */; };
+		6291341F199EAC5900BB037B /* sampleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6291341B199EAC5900BB037B /* sampleImage.jpg */; };
+		62913420199EAC5900BB037B /* ImageReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291341E199EAC5900BB037B /* ImageReflectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		62913406199EA31200BB037B /* ImageReflectionViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageReflectionViewTests-Info.plist"; sourceTree = "<group>"; };
 		62913408199EA31200BB037B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6291340A199EA31200BB037B /* ImageReflectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageReflectionViewTests.m; sourceTree = "<group>"; };
+		6291341B199EAC5900BB037B /* sampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleImage.jpg; sourceTree = "<group>"; };
+		6291341D199EAC5900BB037B /* ImageReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageReflectionView.h; sourceTree = "<group>"; };
+		6291341E199EAC5900BB037B /* ImageReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageReflectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,8 @@
 				629133F4199EA31200BB037B /* ViewController.h */,
 				629133F5199EA31200BB037B /* ViewController.m */,
 				629133F7199EA31200BB037B /* Images.xcassets */,
+				6291341A199EAC5900BB037B /* Images */,
+				6291341C199EAC5900BB037B /* Lib */,
 				629133E6199EA31200BB037B /* Supporting Files */,
 			);
 			path = ImageReflectionView;
@@ -150,6 +157,23 @@
 				62913407199EA31200BB037B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6291341A199EAC5900BB037B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6291341B199EAC5900BB037B /* sampleImage.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6291341C199EAC5900BB037B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6291341D199EAC5900BB037B /* ImageReflectionView.h */,
+				6291341E199EAC5900BB037B /* ImageReflectionView.m */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +255,7 @@
 				629133F8199EA31200BB037B /* Images.xcassets in Resources */,
 				629133EA199EA31200BB037B /* InfoPlist.strings in Resources */,
 				629133F3199EA31200BB037B /* Main.storyboard in Resources */,
+				6291341F199EAC5900BB037B /* sampleImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629133F6199EA31200BB037B /* ViewController.m in Sources */,
+				62913420199EAC5900BB037B /* ImageReflectionView.m in Sources */,
 				629133F0199EA31200BB037B /* AppDelegate.m in Sources */,
 				629133EC199EA31200BB037B /* main.m in Sources */,
 			);
@@ -379,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageReflectionView/ImageReflectionView-Prefix.pch";
 				INFOPLIST_FILE = "ImageReflectionView/ImageReflectionView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageReflectionView/ImageReflectionView-Prefix.pch";
 				INFOPLIST_FILE = "ImageReflectionView/ImageReflectionView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +484,7 @@
 				62913410199EA31200BB037B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62913411199EA31200BB037B /* Build configuration list for PBXNativeTarget "ImageReflectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +493,7 @@
 				62913413199EA31200BB037B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

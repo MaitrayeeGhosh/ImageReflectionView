@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageReflectionView.h"
 
 @interface ViewController : UIViewController
 
